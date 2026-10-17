@@ -37,4 +37,3 @@ HTTPS endpoint identifier from the IDSA W3ID v4.1 namespace.
 #### See
 
 https://w3id.org/idsa/v4.1/HTTPS
-
