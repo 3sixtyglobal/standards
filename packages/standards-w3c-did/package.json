@@ -1,6 +1,6 @@
 {
 	"name": "@3sixty/standards-w3c-did",
-	"version": "0.20.0-next.0",
+	"version": "0.20.0-next.1",
 	"description": "Data models for the W3C DID Core specification.",
 	"repository": {
 		"type": "git",
@@ -40,7 +40,7 @@
 	"devDependencies": {
 		"@3sixty/nameof-transformer": "next",
 		"@3sixty/nameof-vitest-plugin": "next",
-		"@3sixty/standards-ld-contexts": "0.20.0-next.0",
+		"@3sixty/standards-ld-contexts": "0.20.0-next.1",
 		"@3sixty/ts-to-schema": "next",
 		"@3sixty/validate-locales": "next",
 		"@types/node": "26.6.2",
