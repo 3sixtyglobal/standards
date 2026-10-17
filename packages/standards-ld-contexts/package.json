@@ -1,6 +1,6 @@
 {
 	"name": "@3sixty/standards-ld-contexts",
-	"version": "0.20.0-next.0",
+	"version": "0.20.0-next.1",
 	"description": "Local JSON-LD contexts for offline and controlled use.",
 	"repository": {
 		"type": "git",
