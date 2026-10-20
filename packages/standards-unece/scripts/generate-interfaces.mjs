@@ -1,9 +1,11 @@
 // Copyright 2025 IOTA Stiftung.
 // SPDX-License-Identifier: Apache-2.0.
 /* cSpell:disable */
-import fs, { mkdir, writeFile } from 'node:fs/promises';
+import fs, { mkdir, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { Converter } from '@3sixty/core';
+import { Sha256 } from '@3sixty/crypto';
 import { generateIndexFile } from './generate-index-file.mjs';
 
 /**
@@ -17,12 +19,18 @@ import { generateIndexFile } from './generate-index-file.mjs';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const PACKAGE_DIR = path.join(__dirname, '..');
 const SOURCE_DATA_DIR = path.join(__dirname, '..', 'src-data', 'D23B');
 const BASE_OUTPUT_DIR = path.join(__dirname, '..', 'src', 'models');
+const INDEX_FILE = path.join(__dirname, '..', 'src', 'index.ts');
+const CACHE_FILE = path.join(__dirname, '..', '.cache', 'generate-interfaces.json');
 const CLASS_OUTPUT_DIR = 'bsp';
 const LIST_OUTPUT_DIR = 'lists';
 const TYPE_CODE_OUTPUT_DIR = 'typeCodes';
 const MAX_LINE_LENGTH = 120;
+
+// The files written by the run, which are hashed for the incremental cache.
+const writtenFiles = new Set();
 
 /**
  * Load JSON-LD mapping.
@@ -720,7 +728,7 @@ async function generateUneceDataTypes(generatedTypes) {
 	lines.push('}');
 	lines.push('');
 
-	await writeFile(outputPath, lines.join('\n'), 'utf8');
+	await writeOutput(outputPath, lines.join('\n'), 'utf8');
 }
 
 /**
@@ -755,7 +763,7 @@ async function generateUneceTypes(generatedTypes) {
 	lines.push('export type UneceTypes = (typeof UneceTypes)[keyof typeof UneceTypes];');
 	lines.push('');
 
-	await writeFile(path.join(BASE_OUTPUT_DIR, 'uneceTypes.ts'), lines.join('\n'));
+	await writeOutput(path.join(BASE_OUTPUT_DIR, 'uneceTypes.ts'), lines.join('\n'));
 }
 
 /**
@@ -824,7 +832,7 @@ async function generateLocales(locales) {
 	lines.push('export type UneceCodeLists = (typeof UneceCodeLists)[keyof typeof UneceCodeLists];');
 	lines.push('');
 
-	await writeFile(path.join(BASE_OUTPUT_DIR, 'uneceCodeLists.ts'), lines.join('\n'));
+	await writeOutput(path.join(BASE_OUTPUT_DIR, 'uneceCodeLists.ts'), lines.join('\n'));
 }
 
 /**
@@ -840,7 +848,7 @@ async function loadJSON(filePath) {
  * Save JSON file with pretty formatting.
  */
 async function saveJSON(filePath, data) {
-	await writeFile(filePath, `${JSON.stringify(data, undefined, '\t')}\n`, 'utf8');
+	await writeOutput(filePath, `${JSON.stringify(data, undefined, '\t')}\n`, 'utf8');
 }
 
 /**
@@ -869,7 +877,7 @@ async function writeCodeFile(outputDir, typeName, importLines, typeLines) {
 	outputLines.push('');
 
 	await mkdir(path.join(BASE_OUTPUT_DIR, outputDir), { recursive: true });
-	await writeFile(
+	await writeOutput(
 		path.join(BASE_OUTPUT_DIR, outputDir, `${typeName}.ts`),
 		outputLines.join('\n'),
 		'utf8'
@@ -1031,9 +1039,113 @@ function wordsSplit(input) {
 }
 
 /**
+ * Write a generated file and record it for the incremental cache.
+ */
+async function writeOutput(filePath, content, encoding) {
+	await fs.writeFile(filePath, content, encoding);
+	writtenFiles.add(filePath);
+}
+
+/**
+ * List the files in a folder recursively, relative to the package with forward slashes, sorted.
+ */
+async function listFiles(dir, filter = () => true) {
+	const entries = await readdir(dir, { recursive: true, withFileTypes: true });
+	return entries
+		.filter(ent => ent.isFile() && filter(ent.name))
+		.map(ent => toPackagePath(path.join(ent.parentPath, ent.name)))
+		.sort();
+}
+
+/**
+ * Convert a path to be relative to the package with forward slashes.
+ */
+function toPackagePath(filePath) {
+	return path.relative(PACKAGE_DIR, filePath).replace(/\\/g, '/');
+}
+
+/**
+ * Hash the inputs of the generation: the source data, the scripts, and the names of the source
+ * files which the index exports.
+ */
+async function hashInputs() {
+	const hash = new Sha256(Sha256.SIZE_256);
+	const dataFiles = await listFiles(SOURCE_DATA_DIR);
+	const scriptFiles = await listFiles(__dirname);
+	for (const file of [...dataFiles, ...scriptFiles]) {
+		const content = await fs.readFile(path.join(PACKAGE_DIR, file));
+		hash.update(Converter.utf8ToBytes(file));
+		hash.update(content);
+	}
+	const indexedFiles = await listFiles(
+		path.join(PACKAGE_DIR, 'src'),
+		name => name.endsWith('.ts') && name !== 'index.ts'
+	);
+	hash.update(Converter.utf8ToBytes(JSON.stringify(indexedFiles)));
+	return Converter.bytesToHex(hash.digest());
+}
+
+/**
+ * Hash the contents of the files.
+ */
+async function hashFiles(files) {
+	const hashes = {};
+	for (const file of [...files].sort()) {
+		const content = await fs.readFile(path.join(PACKAGE_DIR, file));
+		hashes[file] = Converter.bytesToHex(Sha256.sum256(content));
+	}
+	return hashes;
+}
+
+/**
+ * Are the outputs recorded in the cache still up to date, the inputs have to match and every
+ * output must be unchanged.
+ */
+async function isUpToDate(inputs) {
+	let cache;
+	try {
+		cache = await loadJSON(CACHE_FILE);
+	} catch {
+		return false;
+	}
+	if (cache.inputs !== inputs || typeof cache.outputs !== 'object') {
+		return false;
+	}
+	try {
+		const outputs = await hashFiles(Object.keys(cache.outputs));
+		return Object.keys(outputs).every(file => outputs[file] === cache.outputs[file]);
+	} catch {
+		// An output has been removed.
+		return false;
+	}
+}
+
+/**
+ * Record the inputs and outputs of the run in the cache.
+ */
+async function writeCache() {
+	// The inputs are hashed after the run, as the names of the generated files are part of them.
+	const inputs = await hashInputs();
+	const outputs = await hashFiles([...writtenFiles].map(file => toPackagePath(file)));
+	const cache = { inputs, outputs };
+	await mkdir(path.dirname(CACHE_FILE), { recursive: true });
+	await fs.writeFile(CACHE_FILE, `${JSON.stringify(cache, undefined, '\t')}\n`, 'utf8');
+}
+
+/**
  * Main generation function
  */
 async function main() {
+	const incremental = process.argv.includes('--incremental');
+	if (incremental) {
+		const inputs = await hashInputs();
+		const upToDate = await isUpToDate(inputs);
+		if (upToDate) {
+			process.stdout.write('✅ Interfaces are up to date, skipping generation\n');
+			return;
+		}
+	}
+
 	const jsonLdMapping = await loadJsonLdMapping();
 
 	const csvMapping = await loadCsvData();
@@ -1069,12 +1181,17 @@ async function main() {
 
 	process.stdout.write('✅ Update src/index.ts with generated model exports\n');
 	await generateIndexFile();
+	writtenFiles.add(INDEX_FILE);
 
 	process.stdout.write('✅ Update ts-to-schema.json with generated model exports\n');
 	await generateTsToSchemaJson(generatedTypes);
 
 	process.stdout.write('✅ Update locales\n');
 	await generateLocales(locales);
+
+	if (incremental) {
+		await writeCache();
+	}
 
 	process.stdout.write('\n✅ Interface generation complete!\n');
 }
