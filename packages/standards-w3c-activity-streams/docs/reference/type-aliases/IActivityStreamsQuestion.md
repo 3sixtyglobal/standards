@@ -1,6 +1,6 @@
 # Type Alias: IActivityStreamsQuestion
 
-> **IActivityStreamsQuestion** = [`IActivityStreamsQuestionBase`](../interfaces/IActivityStreamsQuestionBase.md) & [`IActivityStreamsQuestionAnyOfChoice`](../interfaces/IActivityStreamsQuestionAnyOfChoice.md) \| [`IActivityStreamsQuestionOneOfChoice`](../interfaces/IActivityStreamsQuestionOneOfChoice.md) \| [`IActivityStreamsQuestionNeitherChoice`](../interfaces/IActivityStreamsQuestionNeitherChoice.md)
+> **IActivityStreamsQuestion** = [`IActivityStreamsQuestionBase`](../interfaces/IActivityStreamsQuestionBase.md) & ([`IActivityStreamsQuestionAnyOfChoice`](../interfaces/IActivityStreamsQuestionAnyOfChoice.md) \| [`IActivityStreamsQuestionOneOfChoice`](../interfaces/IActivityStreamsQuestionOneOfChoice.md) \| [`IActivityStreamsQuestionNeitherChoice`](../interfaces/IActivityStreamsQuestionNeitherChoice.md))
 
 A W3C Activity Streams Question.
 
