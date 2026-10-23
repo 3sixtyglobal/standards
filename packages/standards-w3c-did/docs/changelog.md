@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.20.0-next.2](https://github.com/3sixtyglobal/standards/compare/standards-w3c-did-v0.20.0-next.1...standards-w3c-did-v0.20.0-next.2) (2026-10-23)
+
+
+### Features
+
+* updated ts compile ([748d7ff](https://github.com/3sixtyglobal/standards/commit/748d7ff1fb771dd9de87d771cda8150f113f007b))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @3sixty/standards-ld-contexts bumped from 0.20.0-next.1 to 0.20.0-next.2
+
 ## [0.20.0-next.1](https://github.com/3sixtyglobal/standards/compare/standards-w3c-did-v0.20.0-next.0...standards-w3c-did-v0.20.0-next.1) (2026-10-17)
 
 
