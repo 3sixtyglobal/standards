@@ -12,7 +12,8 @@ https://www.w3.org/TR/activitystreams-core/#collections
 
 ## Extends
 
-- [`IActivityStreamsCollectionPage`](IActivityStreamsCollectionPage.md).[`IActivityStreamsOrderedCollection`](IActivityStreamsOrderedCollection.md)
+- [`IActivityStreamsCollectionPage`](IActivityStreamsCollectionPage.md)
+- [`IActivityStreamsOrderedCollection`](IActivityStreamsOrderedCollection.md)
 
 ## Properties
 
