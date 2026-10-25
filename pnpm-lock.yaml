@@ -268,9 +268,6 @@ importers:
       '@3sixty/standards-w3c-odrl':
         specifier: 0.20.0-next.2
         version: link:../standards-w3c-odrl
-      '@3sixty/web':
-        specifier: next
-        version: 0.20.0-next.2
     devDependencies:
       '@3sixty/nameof-transformer':
         specifier: next
@@ -296,9 +293,6 @@ importers:
       concurrently:
         specifier: 10.0.6
         version: 10.0.6
-      copyfiles:
-        specifier: 2.4.1
-        version: 2.4.1
       nodemon:
         specifier: 3.1.14
         version: 3.1.14
@@ -320,16 +314,13 @@ importers:
 
   packages/standards-dcsa:
     dependencies:
-      '@3sixty/core':
-        specifier: next
-        version: 0.20.0-next.2
       '@3sixty/data-core':
         specifier: next
         version: 0.20.0-next.3
-      '@3sixty/data-json-ld':
-        specifier: next
-        version: 0.20.0-next.3
     devDependencies:
+      '@3sixty/core':
+        specifier: next
+        version: 0.20.0-next.2
       '@3sixty/nameof-transformer':
         specifier: next
         version: 0.20.0-next.2
@@ -348,9 +339,6 @@ importers:
       concurrently:
         specifier: 10.0.6
         version: 10.0.6
-      copyfiles:
-        specifier: 2.4.1
-        version: 2.4.1
       nodemon:
         specifier: 3.1.14
         version: 3.1.14
@@ -378,9 +366,6 @@ importers:
       '@3sixty/data-json-ld':
         specifier: next
         version: 0.20.0-next.3
-      '@3sixty/web':
-        specifier: next
-        version: 0.20.0-next.2
     devDependencies:
       '@3sixty/core':
         specifier: next
@@ -406,9 +391,6 @@ importers:
       concurrently:
         specifier: 10.0.6
         version: 10.0.6
-      copyfiles:
-        specifier: 2.4.1
-        version: 2.4.1
       nodemon:
         specifier: 3.1.14
         version: 3.1.14
@@ -461,9 +443,6 @@ importers:
       concurrently:
         specifier: 10.0.6
         version: 10.0.6
-      copyfiles:
-        specifier: 2.4.1
-        version: 2.4.1
       nodemon:
         specifier: 3.1.14
         version: 3.1.14
@@ -522,9 +501,6 @@ importers:
       concurrently:
         specifier: 10.0.6
         version: 10.0.6
-      copyfiles:
-        specifier: 2.4.1
-        version: 2.4.1
       nodemon:
         specifier: 3.1.14
         version: 3.1.14
@@ -568,9 +544,6 @@ importers:
       concurrently:
         specifier: 10.0.6
         version: 10.0.6
-      copyfiles:
-        specifier: 2.4.1
-        version: 2.4.1
       nodemon:
         specifier: 3.1.14
         version: 3.1.14
@@ -601,9 +574,6 @@ importers:
       '@3sixty/data-json-ld':
         specifier: next
         version: 0.20.0-next.3
-      '@3sixty/entity':
-        specifier: next
-        version: 0.20.0-next.2
       '@3sixty/nameof':
         specifier: next
         version: 0.20.0-next.2
@@ -629,9 +599,6 @@ importers:
       concurrently:
         specifier: 10.0.6
         version: 10.0.6
-      copyfiles:
-        specifier: 2.4.1
-        version: 2.4.1
       nodemon:
         specifier: 3.1.14
         version: 3.1.14
@@ -662,9 +629,6 @@ importers:
       '@3sixty/data-json-ld':
         specifier: next
         version: 0.20.0-next.3
-      '@3sixty/entity':
-        specifier: next
-        version: 0.20.0-next.2
       '@3sixty/nameof':
         specifier: next
         version: 0.20.0-next.2
@@ -723,12 +687,6 @@ importers:
       '@3sixty/data-core':
         specifier: next
         version: 0.20.0-next.3
-      '@3sixty/data-json-ld':
-        specifier: next
-        version: 0.20.0-next.3
-      '@3sixty/entity':
-        specifier: next
-        version: 0.20.0-next.2
       '@3sixty/nameof':
         specifier: next
         version: 0.20.0-next.2
@@ -748,9 +706,6 @@ importers:
       concurrently:
         specifier: 10.0.6
         version: 10.0.6
-      copyfiles:
-        specifier: 2.4.1
-        version: 2.4.1
       nodemon:
         specifier: 3.1.14
         version: 3.1.14
@@ -803,9 +758,6 @@ importers:
       concurrently:
         specifier: 10.0.6
         version: 10.0.6
-      copyfiles:
-        specifier: 2.4.1
-        version: 2.4.1
       nodemon:
         specifier: 3.1.14
         version: 3.1.14
@@ -845,9 +797,6 @@ importers:
       '@3sixty/standards-w3c-odrl':
         specifier: 0.20.0-next.2
         version: link:../standards-w3c-odrl
-      '@3sixty/web':
-        specifier: next
-        version: 0.20.0-next.2
     devDependencies:
       '@3sixty/nameof-transformer':
         specifier: next
@@ -876,9 +825,6 @@ importers:
       concurrently:
         specifier: 10.0.6
         version: 10.0.6
-      copyfiles:
-        specifier: 2.4.1
-        version: 2.4.1
       nodemon:
         specifier: 3.1.14
         version: 3.1.14
@@ -943,9 +889,6 @@ importers:
       concurrently:
         specifier: 10.0.6
         version: 10.0.6
-      copyfiles:
-        specifier: 2.4.1
-        version: 2.4.1
       nodemon:
         specifier: 3.1.14
         version: 3.1.14
@@ -976,9 +919,6 @@ importers:
       '@3sixty/data-json-ld':
         specifier: next
         version: 0.20.0-next.3
-      '@3sixty/web':
-        specifier: next
-        version: 0.20.0-next.2
     devDependencies:
       '@3sixty/nameof-transformer':
         specifier: next
@@ -1007,9 +947,6 @@ importers:
       concurrently:
         specifier: 10.0.6
         version: 10.0.6
-      copyfiles:
-        specifier: 2.4.1
-        version: 2.4.1
       nodemon:
         specifier: 3.1.14
         version: 3.1.14
@@ -1030,13 +967,6 @@ importers:
         version: 5.0.5(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0))
 
   packages/standards-w3c-vcard:
-    dependencies:
-      '@3sixty/data-json-ld':
-        specifier: next
-        version: 0.20.0-next.3
-      '@3sixty/web':
-        specifier: next
-        version: 0.20.0-next.2
     devDependencies:
       '@3sixty/nameof-transformer':
         specifier: next
@@ -1053,9 +983,6 @@ importers:
       concurrently:
         specifier: 10.0.6
         version: 10.0.6
-      copyfiles:
-        specifier: 2.4.1
-        version: 2.4.1
       nodemon:
         specifier: 3.1.14
         version: 3.1.14
