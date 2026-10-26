@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.20.0-next.3](https://github.com/3sixtyglobal/standards/compare/standards-dataspace-protocol-v0.20.0-next.2...standards-dataspace-protocol-v0.20.0-next.3) (2026-10-26)
+
+
+### Features
+
+* release to next [skip ci] ([#46](https://github.com/3sixtyglobal/standards/issues/46)) ([dec3412](https://github.com/3sixtyglobal/standards/commit/dec3412190510488558e29853dae002cd44a12e7))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @3sixty/standards-dublin-core bumped from 0.20.0-next.2 to 0.20.0-next.3
+    * @3sixty/standards-foaf bumped from 0.20.0-next.2 to 0.20.0-next.3
+    * @3sixty/standards-w3c-dcat bumped from 0.20.0-next.2 to 0.20.0-next.3
+    * @3sixty/standards-w3c-odrl bumped from 0.20.0-next.2 to 0.20.0-next.3
+  * devDependencies
+    * @3sixty/standards-ld-contexts bumped from 0.20.0-next.2 to 0.20.0-next.3
+
 ## [0.20.0-next.2](https://github.com/3sixtyglobal/standards/compare/standards-dataspace-protocol-v0.20.0-next.1...standards-dataspace-protocol-v0.20.0-next.2) (2026-10-23)
 
 
