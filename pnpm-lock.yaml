@@ -257,16 +257,16 @@ importers:
         specifier: next
         version: 0.20.0-next.4
       '@3sixty/standards-dublin-core':
-        specifier: 0.20.0-next.2
+        specifier: 0.20.0-next.3
         version: link:../standards-dublin-core
       '@3sixty/standards-foaf':
-        specifier: 0.20.0-next.2
+        specifier: 0.20.0-next.3
         version: link:../standards-foaf
       '@3sixty/standards-w3c-dcat':
-        specifier: 0.20.0-next.2
+        specifier: 0.20.0-next.3
         version: link:../standards-w3c-dcat
       '@3sixty/standards-w3c-odrl':
-        specifier: 0.20.0-next.2
+        specifier: 0.20.0-next.3
         version: link:../standards-w3c-odrl
     devDependencies:
       '@3sixty/nameof-transformer':
@@ -276,7 +276,7 @@ importers:
         specifier: next
         version: 0.20.0-next.4(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0))
       '@3sixty/standards-ld-contexts':
-        specifier: 0.20.0-next.2
+        specifier: 0.20.0-next.3
         version: link:../standards-ld-contexts
       '@3sixty/ts-to-schema':
         specifier: next
@@ -789,13 +789,13 @@ importers:
         specifier: next
         version: 0.20.0-next.4
       '@3sixty/standards-dublin-core':
-        specifier: 0.20.0-next.2
+        specifier: 0.20.0-next.3
         version: link:../standards-dublin-core
       '@3sixty/standards-foaf':
-        specifier: 0.20.0-next.2
+        specifier: 0.20.0-next.3
         version: link:../standards-foaf
       '@3sixty/standards-w3c-odrl':
-        specifier: 0.20.0-next.2
+        specifier: 0.20.0-next.3
         version: link:../standards-w3c-odrl
     devDependencies:
       '@3sixty/nameof-transformer':
@@ -805,10 +805,10 @@ importers:
         specifier: next
         version: 0.20.0-next.4(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0))
       '@3sixty/standards-ld-contexts':
-        specifier: 0.20.0-next.2
+        specifier: 0.20.0-next.3
         version: link:../standards-ld-contexts
       '@3sixty/standards-w3c-vcard':
-        specifier: 0.20.0-next.2
+        specifier: 0.20.0-next.3
         version: link:../standards-w3c-vcard
       '@3sixty/ts-to-schema':
         specifier: next
@@ -872,7 +872,7 @@ importers:
         specifier: next
         version: 0.20.0-next.4(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0))
       '@3sixty/standards-ld-contexts':
-        specifier: 0.20.0-next.2
+        specifier: 0.20.0-next.3
         version: link:../standards-ld-contexts
       '@3sixty/ts-to-schema':
         specifier: next
@@ -927,10 +927,10 @@ importers:
         specifier: next
         version: 0.20.0-next.4(@types/node@26.6.5)(@vitest/coverage-v8@5.0.5)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0))
       '@3sixty/standards-dublin-core':
-        specifier: 0.20.0-next.2
+        specifier: 0.20.0-next.3
         version: link:../standards-dublin-core
       '@3sixty/standards-w3c-vcard':
-        specifier: 0.20.0-next.2
+        specifier: 0.20.0-next.3
         version: link:../standards-w3c-vcard
       '@3sixty/ts-to-schema':
         specifier: next
