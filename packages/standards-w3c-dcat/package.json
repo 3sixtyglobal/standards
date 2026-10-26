@@ -1,6 +1,6 @@
 {
 	"name": "@3sixty/standards-w3c-dcat",
-	"version": "0.20.0-next.2",
+	"version": "0.20.0-next.3",
 	"description": "Data models for the W3C Data Catalog Vocabulary.",
 	"repository": {
 		"type": "git",
@@ -35,15 +35,15 @@
 		"@3sixty/core": "next",
 		"@3sixty/data-core": "next",
 		"@3sixty/data-json-ld": "next",
-		"@3sixty/standards-dublin-core": "0.20.0-next.2",
-		"@3sixty/standards-foaf": "0.20.0-next.2",
-		"@3sixty/standards-w3c-odrl": "0.20.0-next.2"
+		"@3sixty/standards-dublin-core": "0.20.0-next.3",
+		"@3sixty/standards-foaf": "0.20.0-next.3",
+		"@3sixty/standards-w3c-odrl": "0.20.0-next.3"
 	},
 	"devDependencies": {
 		"@3sixty/nameof-transformer": "next",
 		"@3sixty/nameof-vitest-plugin": "next",
-		"@3sixty/standards-ld-contexts": "0.20.0-next.2",
-		"@3sixty/standards-w3c-vcard": "0.20.0-next.2",
+		"@3sixty/standards-ld-contexts": "0.20.0-next.3",
+		"@3sixty/standards-w3c-vcard": "0.20.0-next.3",
 		"@3sixty/ts-to-schema": "next",
 		"@3sixty/validate-locales": "next",
 		"@types/node": "26.6.5",
