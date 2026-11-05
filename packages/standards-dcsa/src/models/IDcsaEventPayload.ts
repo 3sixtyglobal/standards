@@ -5,7 +5,7 @@ import type { IDcsaShipmentPayload } from "./IDcsaShipmentPayload.js";
 import type { IDcsaTransportPayload } from "./IDcsaTransportPayload.js";
 
 /**
- * Payload union for the base `event` schema (T&T events).
+ * Payload union for the base `event` schema (T&amp;T events).
  */
 export type IDcsaEventPayload =
 	IDcsaShipmentPayload | IDcsaEquipmentPayload | IDcsaTransportPayload;

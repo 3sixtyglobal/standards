@@ -7,7 +7,6 @@
  * UN/LOCODE Countries list.
  * @see https://vocabulary.uncefact.org/unlocode-countries
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const UnLocodeCountriesList = {
 	/**
 	 * ANDORRA: AD.

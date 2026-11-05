@@ -5,7 +5,6 @@
  * The types for ODRL Actions.
  * Simple action types (for direct string usage)
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const OdrlActionType = {
 	// Core actions
 

@@ -4,7 +4,6 @@
 /**
  * GS1 EPC Identifiers.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const Gs1IdTypes = {
 	/**
 	 * GTIN - Trade Item.

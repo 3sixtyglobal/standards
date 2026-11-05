@@ -10,7 +10,6 @@
  * schemas which constrain the discriminator to IOT and REEFER respectively.
  * @see https://github.com/dcsaorg/DCSA-OpenAPI/blob/master/domain/event/event_domain_v3.1.0.yaml
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DcsaEventTypes = {
 	/**
 	 * Shipment event.

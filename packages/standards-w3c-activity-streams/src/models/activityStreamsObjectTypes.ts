@@ -6,7 +6,6 @@
  * @see https://www.w3.org/TR/activitystreams-core/#model
  * @see https://www.w3.org/TR/activitystreams-vocabulary/
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const ActivityStreamsObjectTypes = {
 	/**
 	 * Object

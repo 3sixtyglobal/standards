@@ -4,7 +4,6 @@
 /**
  * The types for ODRL Operators.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const OdrlOperatorType = {
 	/**
 	 * Equal type.

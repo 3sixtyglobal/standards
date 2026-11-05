@@ -18,7 +18,7 @@
 					"type": "string"
 				}
 			],
-			"description": "Reason for the error.\n\nUse {@link EpcisErrorReasonTypes} for known values."
+			"description": "Reason for the error.\n\nUse EpcisErrorReasonTypes for known values."
 		},
 		"correctiveEventIDs": {
 			"type": "array",

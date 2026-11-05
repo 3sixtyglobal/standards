@@ -4,7 +4,6 @@
 /**
  * The LD Contexts concerning Activity Streams.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const ActivityStreamsContexts = {
 	/**
 	 * The canonical RDF namespace URI.

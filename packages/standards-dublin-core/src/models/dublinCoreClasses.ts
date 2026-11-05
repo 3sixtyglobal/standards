@@ -5,7 +5,6 @@
  * Dublin Core DCMI type class identifiers.
  * @see http://purl.org/dc/dcmitype
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DublinCoreClasses = {
 	/**
 	 * A collection of resources.

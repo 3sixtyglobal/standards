@@ -8,7 +8,6 @@
  * Source: discriminator `modeOfTransport` used by `transportCall` (v3.1.0).
  * @see https://github.com/dcsaorg/DCSA-OpenAPI/blob/master/domain/event/event_domain_v3.1.0.yaml
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DcsaModeOfTransport = {
 	/**
 	 * Vessel.

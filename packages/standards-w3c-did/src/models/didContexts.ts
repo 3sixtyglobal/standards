@@ -4,7 +4,6 @@
 /**
  * The contexts for DIDs.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DidContexts = {
 	/**
 	 * The canonical RDF namespace URI for DID.

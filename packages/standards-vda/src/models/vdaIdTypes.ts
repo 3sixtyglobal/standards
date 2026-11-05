@@ -3,7 +3,6 @@
 /**
  * VDA identifiers.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const VdaIdTypes = {
 	/**
 	 * Object.

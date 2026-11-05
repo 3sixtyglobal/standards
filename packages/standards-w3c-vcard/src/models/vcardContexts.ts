@@ -4,7 +4,6 @@
 /**
  * The contexts for VCard.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const VCardContexts = {
 	/**
 	 * The canonical RDF namespace URI.

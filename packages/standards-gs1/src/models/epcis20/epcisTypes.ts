@@ -4,7 +4,6 @@
 /**
  * JSON-LD type IRIs used across EPCIS 2.0 documents and events.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const EpcisTypes = {
 	/**
 	 * EPCISDocument root type for capture payloads.

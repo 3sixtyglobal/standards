@@ -6,7 +6,6 @@
  * @see https://www.w3.org/TR/activitystreams-core/#link
  * @see https://www.w3.org/TR/activitystreams-vocabulary/#link
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const ActivityStreamsLinkTypes = {
 	/**
 	 * Link

@@ -5,7 +5,6 @@
 /**
  * Supported EPCIS 2.0 `error-reason` values from the GS1 EPCIS JSON Schema.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const EpcisErrorReasonTypes = {
 	/**
 	 * Prior event is erroneous because it did not actually occur; no corrective

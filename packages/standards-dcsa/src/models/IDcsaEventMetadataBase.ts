@@ -32,7 +32,7 @@ export interface IDcsaEventMetadataBase {
 	/**
 	 * Event type discriminator.
 	 *
-	 * For the base `event` schema (T&T polling), the discriminator is limited to
+	 * For the base `event` schema (T&amp;T polling), the discriminator is limited to
 	 * SHIPMENT/EQUIPMENT/TRANSPORT and is further narrowed by the concrete event union types.
 	 * Other event hub schemas (e.g. IoT/Reefer) constrain this to IOT/REEFER.
 	 */

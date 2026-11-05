@@ -5,7 +5,6 @@
  * The types for FOAF.
  * @see http://xmlns.com/foaf/0.1/
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const FoafTypes = {
 	/**
 	 * Document.

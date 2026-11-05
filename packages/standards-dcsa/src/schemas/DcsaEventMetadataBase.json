@@ -23,7 +23,7 @@
 		},
 		"eventType": {
 			"$ref": "https://schema.3sixty.global/dcsa/DcsaEventTypes",
-			"description": "Event type discriminator.\n\nFor the base `event` schema (T&T polling), the discriminator is limited to\nSHIPMENT/EQUIPMENT/TRANSPORT and is further narrowed by the concrete event union types.\nOther event hub schemas (e.g. IoT/Reefer) constrain this to IOT/REEFER."
+			"description": "Event type discriminator.\n\nFor the base `event` schema (T&amp;T polling), the discriminator is limited to\nSHIPMENT/EQUIPMENT/TRANSPORT and is further narrowed by the concrete event union types.\nOther event hub schemas (e.g. IoT/Reefer) constrain this to IOT/REEFER."
 		}
 	},
 	"required": [

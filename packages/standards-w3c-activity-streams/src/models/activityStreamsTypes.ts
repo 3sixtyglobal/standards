@@ -5,7 +5,6 @@
  * The types concerning Activity Streams.
  * Section 3.1 Activity Types: https://www.w3.org/TR/activitystreams-vocabulary/#activity-types
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const ActivityStreamsTypes = {
 	/**
 	 * Activity.

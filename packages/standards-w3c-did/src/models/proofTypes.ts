@@ -4,7 +4,6 @@
 /**
  * The types for proofs.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const ProofTypes = {
 	/**
 	 * The type for Data Integrity Proof.

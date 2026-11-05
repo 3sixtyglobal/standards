@@ -11,7 +11,7 @@ export interface IEpcisSource {
 	 * Identifier indicating the role of SourceOrDestination in a transfer (Owning
 	 * Party, Possessing Party, or Location).
 	 *
-	 * Use {@link EpcisSourceDestTypes} for known values.
+	 * Use EpcisSourceDestTypes for known values.
 	 */
 	type: EpcisSourceDestTypes | string;
 

@@ -5,7 +5,6 @@
  * DCAT (Data Catalog Vocabulary) namespace contexts.
  * @see https://www.w3.org/TR/vocab-dcat-3/
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DcatContexts = {
 	/**
 	 * The canonical RDF namespace URI.

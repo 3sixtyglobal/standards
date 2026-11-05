@@ -4,7 +4,6 @@
 /**
  * The contexts of GS1.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const GS1Contexts = {
 	/**
 	 * The canonical RDF namespace URI.

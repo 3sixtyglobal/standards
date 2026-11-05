@@ -4,7 +4,6 @@
 /**
  * VDA URI Packages License Plates identifiers.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const VdaUriIdentifiers = {
 	/**
 	 * ISO 17367 Supply chain applications for RFID - Product tagging.

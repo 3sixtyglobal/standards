@@ -4,7 +4,6 @@
 /**
  * The types of schema.org data.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const SchemaOrgTypes = {
 	/**
 	 * Represents text storage.

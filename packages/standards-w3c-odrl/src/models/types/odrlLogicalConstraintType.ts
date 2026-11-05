@@ -4,7 +4,6 @@
 /**
  * The types for ODRL Logical Constraints.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const OdrlLogicalConstraintType = {
 	/**
 	 * And type.

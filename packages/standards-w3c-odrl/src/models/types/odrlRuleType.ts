@@ -4,7 +4,6 @@
 /**
  * The types for ODRL Rules.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const OdrlRuleType = {
 	/**
 	 * Permission type.

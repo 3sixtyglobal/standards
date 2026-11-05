@@ -4,7 +4,6 @@
 /**
  * The contexts for Dublin Core.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DublinCoreContexts = {
 	/**
 	 * The canonical RDF namespace URI for Dublin Core Terms.

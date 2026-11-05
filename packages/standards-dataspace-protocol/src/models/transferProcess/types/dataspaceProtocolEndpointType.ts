@@ -4,7 +4,6 @@
 /**
  * TWIN Data Space Protocol Profile endpoint type identifiers.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DataspaceProtocolEndpointType = {
 	/**
 	 * HTTPS query endpoint for PULL transfers via the TWIN Data Space Connector Query interface.

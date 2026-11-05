@@ -6,7 +6,6 @@
  * Spec https://www.gs1.org/sites/default/files/docs/epc/CBV-Standard-1-2-1-r-2017-05-05.pdf .
  * Section 10.3.1 .
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const Gs1SubSiteTypes = {
 	/**
 	 * The Backroom.

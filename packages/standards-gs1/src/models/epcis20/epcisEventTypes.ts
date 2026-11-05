@@ -4,7 +4,6 @@
 /**
  * EPCIS 2.0 event type identifiers used in EPCIS JSON and XML documents.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const EpcisEventTypes = {
 	/**
 	 * Event that observes one or more instance- or class-level objects.

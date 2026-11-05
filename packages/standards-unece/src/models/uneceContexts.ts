@@ -4,7 +4,6 @@
 /**
  * The types of UNECE contexts.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const UneceContexts = {
 	/**
 	 * The canonical RDF namespace URI.

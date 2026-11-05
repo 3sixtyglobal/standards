@@ -14,7 +14,7 @@
 					"type": "string"
 				}
 			],
-			"description": "Identifier indicating the role of SourceOrDestination in a transfer (Owning\nParty, Possessing Party, or Location).\n\nUse {@link EpcisSourceDestTypes} for known values."
+			"description": "Identifier indicating the role of SourceOrDestination in a transfer (Owning\nParty, Possessing Party, or Location).\n\nUse EpcisSourceDestTypes for known values."
 		},
 		"source": {
 			"type": "string",

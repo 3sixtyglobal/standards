@@ -14,7 +14,7 @@ export interface IEpcisSensorReport {
 	 * Identifier indicating what kind of measurement the SensorReport pertains to
 	 * (e.g. Length, Mass, Temperature).
 	 *
-	 * Use {@link EpcisMeasurementTypes} for known values.
+	 * Use EpcisMeasurementTypes for known values.
 	 */
 	type: EpcisMeasurementTypes | string;
 
@@ -22,7 +22,7 @@ export interface IEpcisSensorReport {
 	 * A sensor alert value (alarm condition or error condition); extra details may
 	 * be provided via booleanValue or uriValue.
 	 *
-	 * Use {@link EpcisSensorAlertTypes} for known values.
+	 * Use EpcisSensorAlertTypes for known values.
 	 */
 	exception?: EpcisSensorAlertTypes | string;
 

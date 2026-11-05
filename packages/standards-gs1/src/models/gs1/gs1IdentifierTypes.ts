@@ -5,7 +5,6 @@ import { Gs1IdTypes } from "./gs1IdTypes.js";
 /**
  * The types of GS1 Identifier data.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const Gs1IdentifierTypes = {
 	/**
 	 * Identifier epc id namespace.

@@ -4,7 +4,6 @@
 /**
  * The types for ODRL Policies.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const OdrlPolicyType = {
 	/**
 	 * Policy type.

@@ -14,7 +14,7 @@
 					"type": "string"
 				}
 			],
-			"description": "Identifier indicating what kind of measurement the SensorReport pertains to\n(e.g. Length, Mass, Temperature).\n\nUse {@link EpcisMeasurementTypes} for known values."
+			"description": "Identifier indicating what kind of measurement the SensorReport pertains to\n(e.g. Length, Mass, Temperature).\n\nUse EpcisMeasurementTypes for known values."
 		},
 		"exception": {
 			"anyOf": [
@@ -25,7 +25,7 @@
 					"type": "string"
 				}
 			],
-			"description": "A sensor alert value (alarm condition or error condition); extra details may\nbe provided via booleanValue or uriValue.\n\nUse {@link EpcisSensorAlertTypes} for known values."
+			"description": "A sensor alert value (alarm condition or error condition); extra details may\nbe provided via booleanValue or uriValue.\n\nUse EpcisSensorAlertTypes for known values."
 		},
 		"deviceID": {
 			"type": "string",

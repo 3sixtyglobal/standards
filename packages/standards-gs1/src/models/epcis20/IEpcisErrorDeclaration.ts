@@ -16,7 +16,7 @@ export interface IEpcisErrorDeclaration {
 	/**
 	 * Reason for the error.
 	 *
-	 * Use {@link EpcisErrorReasonTypes} for known values.
+	 * Use EpcisErrorReasonTypes for known values.
 	 */
 	reason?: EpcisErrorReasonTypes | string;
 

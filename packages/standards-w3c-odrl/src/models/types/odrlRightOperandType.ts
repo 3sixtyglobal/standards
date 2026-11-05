@@ -5,7 +5,6 @@
  * Right operand types for ODRL constraints.
  * @see https://www.w3.org/TR/odrl-vocab/#term-RightOperand
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const OdrlRightOperandType = {
 	/**
 	 * Reference to policy usage events.

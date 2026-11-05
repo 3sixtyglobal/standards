@@ -4,7 +4,6 @@
 /**
  * The LD Contexts concerning DCSA.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DcsaContexts = {
 	/**
 	 * The canonical RDF namespace URI.

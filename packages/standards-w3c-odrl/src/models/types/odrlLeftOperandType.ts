@@ -4,7 +4,6 @@
 /**
  * The types for ODRL Data Types.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const OdrlLeftOperandType = {
 	/**
 	 * Absolute Position type.

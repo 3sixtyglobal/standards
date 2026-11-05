@@ -4,7 +4,6 @@
 /**
  * The types for ODRL Status.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const OdrlStatusType = {
 	/**
 	 * Active type.

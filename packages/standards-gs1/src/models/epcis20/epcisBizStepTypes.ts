@@ -7,7 +7,6 @@
  * These values come from the GS1 EPCIS / CBV (Core Business Vocabulary).
  * Use the union type `EpcisBizStepTypes` when you want to restrict a field to known CBV values.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const EpcisBizStepTypes = {
 	/**
 	 * Activity where an object changes possession and/or ownership.

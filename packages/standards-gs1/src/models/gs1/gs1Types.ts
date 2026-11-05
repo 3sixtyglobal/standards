@@ -4,7 +4,6 @@
 /**
  * The types of GS1 data.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const Gs1Types = {
 	/**
 	 * Represents Location Master Data.

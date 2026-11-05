@@ -9,7 +9,6 @@
  * Use the union type `EpcisDispositionTypes` to restrict a field to known CBV
  * values.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const EpcisDispositionTypes = {
 	/**
 	 * A commissioned object has just been introduced into the supply chain.

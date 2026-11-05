@@ -5,7 +5,6 @@
  * Common Dublin Core property types for ODRL Policy Metadata.
  * @see http://purl.org/dc/terms/
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DublinCorePropertyType = {
 	/**
 	 * The individual, agent, or organisation that authored the Policy.

@@ -4,7 +4,6 @@
 /**
  * The LD Contexts concerning FOAF.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const FoafContexts = {
 	/**
 	 * The canonical RDF namespace URI.

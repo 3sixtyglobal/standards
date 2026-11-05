@@ -4,7 +4,6 @@
 /**
  * The types of VDA Identifier data.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const VdaIdentifierTypes = {
 	/**
 	 * Identifier Joint Automotive Industry Format namespace.

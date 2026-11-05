@@ -5,7 +5,6 @@
 /**
  * Supported EPCIS 2.0 `component` values.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const EpcisComponentTypes = {
 	/**
 	 * Component or projection along the x axis in Cartesian coordinates (X, Y, Z).

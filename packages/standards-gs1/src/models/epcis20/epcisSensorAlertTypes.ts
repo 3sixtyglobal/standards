@@ -6,7 +6,6 @@
  * Supported EPCIS 2.0 `sensorAlertType` values for sensor-generated alarms or
  * errors.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const EpcisSensorAlertTypes = {
 	/**
 	 * Sensor alert indicating an alarm condition.

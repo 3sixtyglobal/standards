@@ -4,7 +4,6 @@
 /**
  * The types for DID Proof crypto suites.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DidCryptoSuites = {
 	/**
 	 * The type for EdDSA crypto suite for JSON Canonicalization Scheme [RFC8785].

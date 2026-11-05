@@ -6,7 +6,6 @@
  * Based on RFC 7518 (JSON Web Algorithms) and W3C DID standards.
  * @see https://datatracker.ietf.org/doc/html/rfc7518#section-3.1
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const JwsAlgorithms = {
 	/**
 	 * EdDSA signature algorithm using Ed25519 curve.

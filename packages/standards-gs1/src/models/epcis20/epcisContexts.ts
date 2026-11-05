@@ -4,7 +4,6 @@
 /**
  * Canonical EPCIS JSON-LD context IRIs as defined by GS1.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const EpcisContexts = {
 	/**
 	 * The canonical RDF namespace URI.

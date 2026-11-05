@@ -14,7 +14,7 @@
 					"type": "string"
 				}
 			],
-			"description": "Identifier that indicates the type of BizTransaction document (e.g. Purchase\nOrder, Despatch Advice).\n\nUse {@link EpcisBizTransactionTypes} for known values."
+			"description": "Identifier that indicates the type of BizTransaction document (e.g. Purchase\nOrder, Despatch Advice).\n\nUse EpcisBizTransactionTypes for known values."
 		},
 		"bizTransaction": {
 			"type": "string",

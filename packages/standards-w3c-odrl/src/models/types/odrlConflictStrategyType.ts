@@ -4,7 +4,6 @@
 /**
  * The types for ODRL Conflict Resolution Strategies.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const OdrlConflictStrategyType = {
 	/**
 	 * Permission type.

@@ -7,7 +7,6 @@
  * UN/LOCODE Functions list.
  * @see https://vocabulary.uncefact.org/unlocode-functions
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const UnLocodeFunctionsList = {
 	/**
 	 * Not officially functional: 0.

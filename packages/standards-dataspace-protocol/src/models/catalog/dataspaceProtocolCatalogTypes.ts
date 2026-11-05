@@ -5,7 +5,6 @@
  * Type identifiers for the Dataspace Protocol Catalog Protocol.
  * @see https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/#catalog-protocol
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DataspaceProtocolCatalogTypes = {
 	/**
 	 * Catalog Request Message.

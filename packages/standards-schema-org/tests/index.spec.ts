@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0.
 import { Is } from "@3sixty/core";
 import { JsonLdHelper, JsonLdProcessor, type IJsonLdDocument } from "@3sixty/data-json-ld";
-import { FetchHelper, HttpMethod } from "@3sixty/web";
+import { FetchHelper, HttpMethod, MimeTypes } from "@3sixty/web";
 
 describe("standards-schema-org", () => {
 	const supportsLinkDiscovery =
@@ -80,7 +80,7 @@ describe("standards-schema-org", () => {
 							{
 								status: 200,
 								headers: new Headers({
-									"content-type": "application/ld+json"
+									"content-type": MimeTypes.JsonLd
 								})
 							}
 						);
@@ -89,7 +89,7 @@ describe("standards-schema-org", () => {
 					return new Response(JSON.stringify({ error: "not found" }), {
 						status: 404,
 						headers: new Headers({
-							"content-type": "application/json"
+							"content-type": MimeTypes.Json
 						})
 					});
 				})

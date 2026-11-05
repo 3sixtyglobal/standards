@@ -8,7 +8,6 @@
  * These values come from the GS1 EPCIS JSON Schema enumeration.
  * Use the union type `EpcisMeasurementTypes` when you want to restrict a field to known values.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const EpcisMeasurementTypes = {
 	/**
 	 * Measurement type "AbsoluteHumidity".

@@ -6,7 +6,6 @@
  * Supported EPCIS 2.0 `source-dest-type` values describing the role of a party
  * or location in a transfer.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const EpcisSourceDestTypes = {
 	/**
 	 * Identifier denotes the party who owns (or will own) the objects at the

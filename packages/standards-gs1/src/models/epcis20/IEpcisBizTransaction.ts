@@ -11,7 +11,7 @@ export interface IEpcisBizTransaction {
 	 * Identifier that indicates the type of BizTransaction document (e.g. Purchase
 	 * Order, Despatch Advice).
 	 *
-	 * Use {@link EpcisBizTransactionTypes} for known values.
+	 * Use EpcisBizTransactionTypes for known values.
 	 */
 	type?: EpcisBizTransactionTypes | string;
 

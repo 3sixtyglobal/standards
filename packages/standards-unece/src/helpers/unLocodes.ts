@@ -349,7 +349,9 @@ export class UnLocodes {
 			const jsonBuffer = await Compression.decompress(compressed, CompressionType.Gzip);
 			const records = ObjectHelper.fromBytes<R[]>(jsonBuffer);
 			cache[normalized] = records.map(record => mapMethod(normalized, record));
-		} catch {}
+		} catch {
+			// No data for this country, return an empty list.
+		}
 
 		return cache[normalized] ?? [];
 	}

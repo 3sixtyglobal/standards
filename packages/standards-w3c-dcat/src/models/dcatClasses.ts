@@ -5,7 +5,6 @@
  * DCAT core classes representing the main entities in the Data Catalog Vocabulary.
  * @see https://www.w3.org/TR/vocab-dcat-3/#classes
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DcatClasses = {
 	/**
 	 * A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).

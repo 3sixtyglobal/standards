@@ -4,7 +4,6 @@
 /**
  * Context URLs and namespace identifiers for the Dataspace Protocol.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DataspaceProtocolContexts = {
 	/**
 	 * The canonical RDF namespace URI.

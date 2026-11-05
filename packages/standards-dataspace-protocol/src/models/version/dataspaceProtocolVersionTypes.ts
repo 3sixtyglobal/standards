@@ -5,7 +5,6 @@
  * Type identifiers for the Dataspace Protocol version endpoint.
  * @see https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1-err1/#exposure-of-dataspace-protocol-versions
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DataspaceProtocolVersionTypes = {
 	/**
 	 * Version Response.

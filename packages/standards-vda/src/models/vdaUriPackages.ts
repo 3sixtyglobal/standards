@@ -3,7 +3,6 @@
 /**
  * VDA URI Packages License Plates identifiers.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const VdaUriPackages = {
 	/**
 	 * Unique package ID of inner packaging (Single Label).

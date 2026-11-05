@@ -5,7 +5,6 @@ import type { IDidDocument } from "./IDidDocument.js";
 /**
  * The types of verification method.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DidVerificationMethodType: {
 	[id: string]: keyof Pick<
 		IDidDocument,

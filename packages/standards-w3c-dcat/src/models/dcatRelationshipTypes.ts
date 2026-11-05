@@ -6,7 +6,6 @@
  * These are used with the dcat:qualifiedRelation property.
  * @see https://www.w3.org/TR/vocab-dcat-3/#qualified-forms
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const DcatRelationshipType = {
 	/**
 	 * The function of an entity with respect to another resource.

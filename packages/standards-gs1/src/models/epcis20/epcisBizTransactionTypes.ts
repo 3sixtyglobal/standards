@@ -5,7 +5,6 @@
 /**
  * Supported EPCIS 2.0 `bizTransaction-type` values.
  */
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export const EpcisBizTransactionTypes = {
 	/**
 	 * A document issued by a carrier to a shipper, listing and acknowledging receipt
